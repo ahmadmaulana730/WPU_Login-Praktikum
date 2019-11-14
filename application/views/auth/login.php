@@ -18,22 +18,23 @@
                     <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
                   </div>
                   <?= $this->session->flashdata('message');?>
-                  <form class="user">
+                  <form class="user" method="post" action="<?= base_url('auth'); ?>">
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" name="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="text" class="form-control form-control-user" name="email" id="exampleInputEmail" aria-describedby="emailHelp" value="<?= set_value('email');?>" placeholder="Enter Email Address...">
+                      <?= form_error('email','<small class="text-danger pl-3">','</small>');?>
                     </div>
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" name="password" id="exampleInputPassword" placeholder="Password">
+                      <?= form_error('password','<small class="text-danger pl-3">','</small>');?>
                     </div>
                    
-                    <a href="index.html" class="btn btn-primary btn-user btn-block">
-                      Login
-                    </a>
-                 
+                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                    login
+                 </button>
                    
                   </form>
                   <hr>
-                  <div class="text-center">
+  <div class="text-center">
                     <a class="small" href="forgot-password.html">Forgot Password?</a>
                   </div>
                   <div class="text-center">
@@ -51,4 +52,5 @@
 
   </div>
 
-
+<div class="div">
+    </div>
