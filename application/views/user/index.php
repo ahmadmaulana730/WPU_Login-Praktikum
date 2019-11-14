@@ -176,11 +176,20 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800"></h1>
+          <h1 class="h3 mb-4 text-gray-800"><?= $title;?></h1>
 
         </div>
         <!-- /.container-fluid -->
-
+      <div class="row justify-content-center">
+        <div class="col-4 card" >
+  <img class="card-img-top" src="<?= base_url('assets/img/'). $user['image']; ?>" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><?= $user['name'];?></h5>
+    <p class="card-text"><?= $user['email'];?></p>
+   
+  </div>
+</div>
+</div>
       </div>
       <!-- End of Main Content -->
 
@@ -188,7 +197,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Your Ahmad Maulana <?= date('Y');?></span>
           </div>
         </div>
       </footer>
