@@ -158,18 +158,7 @@
 
         </div>
         <!-- /.container-fluid -->
-      <div class="row justify-content-center">
-        <div class="col-4 card" >
-  <img class="card-img-top" src="<?= base_url('assets/img/'). $user['image']; ?>" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><?= $user['name'];?></h5>
-    <p class="card-text"><?= $user['email'];?></p>
-    <hr>
-    <p class="card-text"><small class="text-muted">member since <?= date('d F Y', $user['date_created']);?><small></p>
    
-  </div>
-</div>
-</div>
       </div>
       <!-- End of Main Content -->
 
